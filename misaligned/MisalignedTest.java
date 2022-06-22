@@ -8,6 +8,5 @@ public class MisalignedTest {
 		String actualPair = new String(array + " | " + actualMajorColor + " | " + actualMinorColor);
 		System.out.println(actualPair);
 		assert (pairString.contentEquals(actualPair));
-
-	}
+}
 }

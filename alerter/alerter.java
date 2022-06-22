@@ -23,12 +23,17 @@ public class alerter {
 			alertFailureCount += 0;
 		}
 	}
-
+	public static void testAlertFailureCount() {
+		alerter.alertInCelcius(500.0f);
+		assert (alerter.alertFailureCount == 1);
+		alerter.alertInCelcius(450.0f);
+		assert (alerter.alertFailureCount == 2);
+	}
 	public static void main(String[] args) {
 		alertInCelcius(400.5f);
 		alertInCelcius(303.6f);
 		System.out.printf("%d alerts failed.\n", alertFailureCount);
-		AlerterTest.testAlertFailureCount();
+		/*AlerterTest.*/testAlertFailureCount();
 		System.out.println("All is well (maybe!)\n");
 	}
 }
