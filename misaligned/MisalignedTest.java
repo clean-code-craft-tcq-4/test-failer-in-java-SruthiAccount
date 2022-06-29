@@ -5,7 +5,8 @@ public class MisalignedTest {
 		int pair = Integer.parseInt(array);
 		String actualMajorColor = majorColors[pair / majorColors.length];
 		String actualMinorColor = minorColors[pair % minorColors.length];
-		String actualPair = new String(array + " | " + actualMajorColor + " | " + actualMinorColor);
-		assert (pairString.contentEquals(actualPair));
+		String actualPair = new String(array + "|" + actualMajorColor + "|" + actualMinorColor);
+		assert (actualPair.contentEquals(pairString));
+
 	}
 }
