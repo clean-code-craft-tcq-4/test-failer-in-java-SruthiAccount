@@ -1,4 +1,3 @@
-
 public class TShirtsTest {
 	public void testSize() {
 		assert (tshirts.size(37) == "S");
